@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/5231ce5c7b.js" crossorigin="anonymous"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%);}
+  </style>
+</head>
+<body>
+
+  <div class="menu">
+    <h2>Notifications<span id="counter">0</span></h2>
+    <p id="mark">Mark all as read</p>
+  </div>
+ 
+
+  <div class="notification-container">
+
+    <div class="notification unmarked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Mark Webber</a></h3>
+            <p class="action">reacted to your recent post</p>
+            <p class="context"><strong><a href="">My first tournament today!</a></strong></p>
+            <i class="fa fa-circle unread"></i>
+            <p class="time">1m ago</p> 
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="notification unmarked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Angela Gray</a></h3>
+            <p class="action">followed you</p>
+            <i class="fa fa-circle unread"></i>
+            <p class="time">5m ago</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="notification unmarked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Jacob Thompson</a></h3>
+            <p class="action">has joined your group </p>
+            <p class="context"><strong><a href="">Chess Club</a></strong></p>
+            <i class="fa fa-circle unread"></i>
+            <p class="time">1 day ago</p>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+     
+    <div class="notification marked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Rizky Hasanuddin</a></h3>
+            <p class="action">sent you a private message</p>
+            <p class="time">5 days ago</p>
+            <div class="message">
+              <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="notification marked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Kimberly Smith</a></h3>
+            <p class="action">commented on your picture</p>
+            <p class="time">1 week ago</p>
+          </td>
+          <td><img src="assets/images/image-chess.webp" alt="image-chess.webp"></td>
+        </tr>
+      </table>
+
+    </div>
+    
+    <div class="notification marked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Nathan Peterson</a></h3>
+            <p class="action">reacted to your recent post</p>
+            <p class="context"><strong><a href="">5 end-game strategies to increase your win rate</a></strong></p>
+            <p class="time">2 weeks ago</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="notification marked">
+      <table>
+        <tr>
+          <td><img src="assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim.webp"></td>
+          <td>
+            <h3 class="name"><a href="">Anna Kim</a></h3>
+            <p class="action">left the group</p>
+            <p class="context"><strong><a href="">Chess Club</a></strong></p>
+            <p class="time">2 weeks ago </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Faeiz Zaqwan</a>.
+  </div>
+
+  <!--JS and jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
