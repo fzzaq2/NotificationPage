@@ -128,6 +128,7 @@ img:hover{
 .message:hover{
     background-color: hsl(211, 68%, 94%);
     border: 2px solid transparent;
+    cursor: pointer;
 }
 
 .marked {
